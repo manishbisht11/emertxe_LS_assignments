@@ -1,0 +1,15 @@
+#!/bin/bash
+#this is program to calculate the string length
+ARR=($@) #all the arguments are stored in ARR variable
+echo -n  " In your program you have words :  "
+echo $#
+c=$#
+num=$1
+for((i=0; i<c; i++)) #when i equals to value of c(number of argument) it will terminate.
+do 
+	str1=${ARR[$i]} 
+   echo -n " $str1  =  "
+   echo ${#str1}
+
+done
+
